@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width" , initial-scale="1.0" />
+    <title>Animation Lab</title>
+    <style>
+      /*
+      body {
+        background: #453d54;
+      }
+      .status button {
+        background-color: #aa80ff;
+        border-radius: 10px;
+        color: #fff;
+      }
+      .status textarea {
+        border: 1px solid #999;
+        border-radius: 10px;
+        width: 23em;
+        height: 1em;
+      }
+
+      .selected {
+        animation-name: selectedAnim;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+
+      .deselected {
+        animation-name: selectedAnim;
+        animation-duration: 1s;
+        animation-direction: reverse;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes selectedAnim {
+        from {
+          height: 1em;
+          background-color: #fff;
+        }
+        to {
+          height: 3em;
+          background-color: #ffcfe4;
+        }
+      }*/
+      h2 {
+        padding: 30px 300px;
+      }
+
+      .header {
+        height: 160px;
+        width: 800px;
+        background-color: #000099;
+        margin: auto;
+      }
+
+      .section {
+        height: 160px;
+        width: 800px;
+        background-color: #fff;
+        margin: auto;
+        display: flex;
+      }
+      .sectionitem {
+        height: 120px;
+        width: 240px;
+        background-color: #990099;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="title">Caleb Imel - Animate</h2>
+
+    <div class="header"></div>
+
+    <div class="section">
+      <div
+        class="sectionitem"
+        id="item1"
+        onmouseenter="textFocus(id)"
+        onmouseleave="textLeave(id)"
+        onclick="textExit(id)"
+      ></div>
+      <div
+        class="sectionitem"
+        id="item2"
+        onmouseenter="textFocus(id)"
+        onmouseleave="textLeave(id)"
+        onclick="textExit(id)"
+      ></div>
+      <div
+        class="sectionitem"
+        id="item3"
+        onmouseenter="textFocus(id)"
+        onmouseleave="textLeave(id)"
+        onclick="textExit(id)"
+      ></div>
+    </div>
+    <div class="section">
+      <div
+        class="sectionitem"
+        id="item4"
+        onmouseenter="textFocus(id)"
+        onmouseleave="textLeave(id)"
+        onclick="textExit(id)"
+      ></div>
+      <div
+        class="sectionitem"
+        id="item5"
+        onmouseenter="textFocus(id)"
+        onmouseleave="textLeave(id)"
+        onclick="textExit(id)"
+      ></div>
+      <div
+        class="sectionitem"
+        id="item6"
+        onmouseenter="textFocus(id)"
+        onmouseleave="textLeave(id)"
+        onclick="textExit(id)"
+      ></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
