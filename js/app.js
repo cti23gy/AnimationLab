@@ -1,5 +1,3 @@
-
-
 function textFocus(id) {
 	let SectionHover = document.getElementById(id);
 	TweenMax.to(SectionHover, 0.4, {backgroundColor: "#997799"})
